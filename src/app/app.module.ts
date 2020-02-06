@@ -16,6 +16,10 @@ import { ChildComponent } from './child/child.component';
 import { FlowerService } from './flower.service';
 import { AnimalService } from './animal.service';
 import { InspectorComponent } from './inspector/inspector.component';
+import { HeroTaxReturnComponent } from './hero-tax-return/hero-tax-return.component';
+import { HeroTaxReturnService } from './hero-tax-return.service';
+import { HeroesService } from './heroes.service';
+import { HeroesListComponent } from './heroes-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { InspectorComponent } from './inspector/inspector.component';
     DashboardComponent,
     HeroSearchComponent,
     ChildComponent,
-    InspectorComponent  ],
+    InspectorComponent,
+    HeroTaxReturnComponent ,
+    HeroesListComponent ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -41,7 +47,7 @@ import { InspectorComponent } from './inspector/inspector.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [FlowerService, AnimalService],
+  providers: [FlowerService, AnimalService, HeroTaxReturnService, HeroesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

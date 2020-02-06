@@ -3,5 +3,12 @@
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
 </nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<!--router-outlet></router-outlet>
+<app-messages></app-messages-->
+<label><input type="checkbox" [checked]="showHeroes"   (change)="showHeroes=!showHeroes">Heroes</label>
+    <label><input type="checkbox" [checked]="showVillains" (change)="showVillains=!showVillains">Villains</label>
+    <label><input type="checkbox" [checked]="showCars"     (change)="showCars=!showCars">Cars</label>
+
+    <h1>Hierarchical Dependency Injection</h1>
+
+    <app-heroes-list   *ngIf="showHeroes"></app-heroes-list>
