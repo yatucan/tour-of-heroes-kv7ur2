@@ -20,6 +20,7 @@ import { HeroTaxReturnComponent } from './hero-tax-return/hero-tax-return.compon
 import { HeroTaxReturnService } from './hero-tax-return.service';
 import { HeroesService } from './heroes.service';
 import { HeroesListComponent } from './heroes-list.component';
+import { Routable1Component } from './routable1/routable1.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeroesListComponent } from './heroes-list.component';
     ChildComponent,
     InspectorComponent,
     HeroTaxReturnComponent ,
-    HeroesListComponent ],
+    HeroesListComponent,
+    Routable1Component ],
   imports: [
     BrowserModule,
     FormsModule,
